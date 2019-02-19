@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Assignment" verbose="1" >
+    <test name="Assignment suite" >
+        <package>
+             <pacakage name="tests.productTest"/>
+        </package>
+        <classes>
+            <class name="tests.productTest.AddProduct"/>
+            <class name="tests.productTest.DeleteProduct"/>
+            <class name="tests.productTest.GetProduct"/>
+            <class name="tests.productTest.GetProducts"/>
+            <class name="tests.productTest.UpdateProduct"/>
+        </classes>
+    </test>
+</suite>
