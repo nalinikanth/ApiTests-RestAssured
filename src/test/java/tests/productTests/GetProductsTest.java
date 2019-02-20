@@ -1,9 +1,9 @@
-package tests.productTest;
+package tests.productTests;
 
 import api.ProductApi;
 import org.testng.annotations.Test;
 
-public class GetProducts extends ProductBaseTest{
+public class GetProductsTest extends ProductBaseTest{
 
 
     @Test

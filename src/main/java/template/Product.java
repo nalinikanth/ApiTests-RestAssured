@@ -13,20 +13,14 @@ public class Product {
     public String manufacturer;
     public String model;
 
+    static Product product=new Product();
+
+
     public static String getProductDetails()
     {
         PropertiesReader.load(System.getProperty("user.dir") + "/src/main/resources/product.properties");
-        Product product = new Product();
+        commonBody();
         product.name=PropertiesReader.get("name");
-        product.type=PropertiesReader.get("type");
-        product.price=Integer.parseInt(PropertiesReader.get("price"));
-        product.shipping=Integer.parseInt(PropertiesReader.get("shipping"));
-        product.upc=PropertiesReader.get("upc");
-        product.description=PropertiesReader.get("description");
-        product.manufacturer=PropertiesReader.get("manufacturer");
-        product.model=PropertiesReader.get("model");
-
-
         String jsonString = new Gson().toJson(product);
         return jsonString;
     }
@@ -34,8 +28,15 @@ public class Product {
     public static String getUpdatedProductDetails()
     {
         PropertiesReader.load(System.getProperty("user.dir") + "/src/main/resources/product.properties");
-        Product product = new Product();
+        commonBody();
         product.name=PropertiesReader.get("name1");
+        String jsonString = new Gson().toJson(product);
+        System.out.println("jsonString = " + jsonString);
+        return jsonString;
+    }
+
+
+    public static void commonBody(){
         product.type=PropertiesReader.get("type");
         product.price=Integer.parseInt(PropertiesReader.get("price"));
         product.shipping=Integer.parseInt(PropertiesReader.get("shipping"));
@@ -44,10 +45,6 @@ public class Product {
         product.manufacturer=PropertiesReader.get("manufacturer");
         product.model=PropertiesReader.get("model");
 
-
-        String jsonString = new Gson().toJson(product);
-        System.out.println("jsonString = " + jsonString);
-        return jsonString;
     }
 
 }
