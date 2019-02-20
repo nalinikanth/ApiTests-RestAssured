@@ -12,7 +12,7 @@ public class ProductBaseTest {
     Response response;
 
     static void envDetails() {
-        PropertiesReader.load(System.getProperty("user.dir") + "/src/main/resources/environment.properties");
+        PropertiesReader.load(System.getProperty("user.dir") + "/src/main/resources/env.properties");
         baseURI = PropertiesReader.get("url");
     }
 
