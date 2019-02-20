@@ -5,11 +5,11 @@
              <pacakage name="tests.productTests"/>
         </package>
         <classes>
-            <class name="tests.productTests.AddProductTest"/>
-            <class name="tests.productTests.DeleteProductTest"/>
-            <class name="tests.productTests.GetProductTest"/>
-            <class name="tests.productTests.GetProductsTest"/>
-            <class name="tests.productTests.UpdateProductTest"/>
+            <class name="productTests.AddProductTest"/>
+            <class name="productTests.DeleteProductTest"/>
+            <class name="productTests.GetProductTest"/>
+            <class name="productTests.GetProductsTest"/>
+            <class name="productTests.UpdateProductTest"/>
         </classes>
     </test>
 </suite>

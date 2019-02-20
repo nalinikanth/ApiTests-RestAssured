@@ -1,13 +1,14 @@
-package tests.productTests;
+package productTests;
 
 import api.ProductApi;
 import io.restassured.RestAssured;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import util.PropertiesReader;
+
 import static org.hamcrest.Matchers.*;
 
-public class DeleteProductTest extends ProductBaseTest {
+public class GetProductTest extends ProductBaseTest {
 
 
     String validProductId;
@@ -24,15 +25,15 @@ public class DeleteProductTest extends ProductBaseTest {
     }
 
     @Test
-    public void deleteValidSpecificProduct(){
-        response = ProductApi.deleteSpecificProduct(validProductId);
+    public void getValidSpecificProduct(){
+        response = ProductApi.getSpecificProduct(validProductId);
         response.then().statusCode(200);
         response.then().assertThat().body("id", equalTo(Integer.parseInt(validProductId)));
     }
 
     @Test
-    public void deleteInvalidSpecificProduct(){
-        response = ProductApi.deleteSpecificProduct(inValidProductId);
+    public void getInvalidSpecificProduct(){
+        response = ProductApi.getSpecificProduct(inValidProductId);
         response.then().statusCode(404);
     }
 }

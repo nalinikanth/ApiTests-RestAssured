@@ -1,4 +1,4 @@
-package tests.productTests;
+package productTests;
 
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
