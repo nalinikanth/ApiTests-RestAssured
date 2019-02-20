@@ -7,6 +7,24 @@ Software that is required to make this repo work :)
 - Java 1.8
 - Maven 
 
+### Libraries used
+
+#### rest-assured
+
+- Test and validate API end points
+
+#### TestNG
+
+- Is used mainly as test runner, to maintain test structure using annotations
+
+#### gson
+
+- Java library to serialize and deserialize Java objects to JSON
+
+#### hamcrest
+
+- Used for assertions, matchers to verify results
+
 ## Test structure
 
 __ProductAPI__ - Has extracted calls for Products API
