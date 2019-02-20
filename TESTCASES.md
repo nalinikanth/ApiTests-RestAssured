@@ -1,4 +1,4 @@
-#Test cases for Products API
+# Test cases for Products API
 
 - [createNewProduct](src/test/java/tests/productTest/AddProductTest.java) Create a new product and verify the product is created successfully.
 - [deleteValidSpecificProduct](src/test/java/tests/productTest/DeleteProductTest.java)  Delete an existing product, should get deleted successfully 

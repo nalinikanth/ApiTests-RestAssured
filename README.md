@@ -1,4 +1,4 @@
-#API automation for Products API
+# API automation for Products API
 
 This document explains required software, test structure and how to run tests.
 
