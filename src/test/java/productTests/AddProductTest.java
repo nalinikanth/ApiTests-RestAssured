@@ -1,9 +1,9 @@
 package productTests;
 
-        import api.ProductApi;
-        import org.testng.annotations.Test;
-        import util.PropertiesReader;
-        import static org.hamcrest.Matchers.equalTo;
+import api.ProductApi;
+import org.testng.annotations.Test;
+import util.PropertiesReader;
+import static org.hamcrest.Matchers.equalTo;
 
 public class AddProductTest extends ProductBaseTest{
 
