@@ -3,11 +3,11 @@
 <suite name="Assignment" verbose="1" >
     <test name="Assignment suite" >
         <classes>
-            <class name="productTests.AddProductTest"/>
-            <class name="productTests.DeleteProductTest"/>
-            <class name="productTests.GetProductTest"/>
-            <class name="productTests.GetProductsTest"/>
-            <class name="productTests.UpdateProductTest"/>
+            <class name="producttests.AddProductTest"/>
+            <class name="producttests.DeleteProductTest"/>
+            <class name="producttests.GetProductTest"/>
+            <class name="producttests.GetProductsTest"/>
+            <class name="producttests.UpdateProductTest"/>
         </classes>
     </test>
 </suite>
