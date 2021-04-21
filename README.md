@@ -4,7 +4,7 @@ This document explains required software, test structure and how to run tests.
 
 ## Prerequisites
 Software that is required to make this repo work :) 
-- Java 1.8
+-- Java 1.8
 - Maven 
 
 ### Libraries used
